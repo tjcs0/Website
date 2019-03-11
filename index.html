@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/css_index.css">
+        
+        <!--BOOTSTRAP-->
+                
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+        <title>DAYDREAMER</title>
+    </head>
+
+    <body>
+        <div class="box_out transform_out"></div>
+        <div class="box_in transform_in"></div>
+        <div class="bg">
+         <!--LOGO-->
+        
+        <div class="home">
+            <div class="logo_div">
+                <img class="animated bounceInDown slower logo" src="img/logo.png">
+            </div>
+        </div>
+        
+        <!--MENU-->
+                
+        <div class = "animated slideinup menu_bot">
+                <ul class="nav justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="javascript:window.location.reload(true)">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">Sobre</a>
+                  </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="http://loja.daydreamer.pt/">Loja</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Testemunhos</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contactos</a>
+                  </li>
+                </ul>
+            
+        </div>
+            
+        <div class="animated slideinup social">
+        
+            <a class="fa" href ="https://www.facebook.com/daydreamermagicaldesign/" target="_blank">&#xf09a;</a> 
+            <a class="fa" href ="https://instagram.com/daydreamer.ghenriques/" target="_blank'">&#xf16d;</a>
+                
+        </div>
+            </div> 
+        
+
+        
+        
+<!-- Animação transição -->
+        
+        <script>
+            $(document).ready(function(){
+                $("a.nav-link").click(function(){
+                    $(".box_out").toggleClass("box_max");
+                });
+            });
+        </script>
+        
+        <script>
+            $(document).ready(function(){
+                $(document).ready(function() {
+                    $(".box_in").toggleClass("box_min");
+                });
+            });
+        </script>
+        
+        <script>
+            $('a.nav-link').click(function (e) {
+                e.preventDefault();                   // prevent default anchor behavior
+                var goTo = this.getAttribute("href"); // store anchor href
+
+                setTimeout(function(){
+                     window.location = goTo;
+                },2000);       
+            });
+        </script>
+        
+        
+    </body>
+</html>

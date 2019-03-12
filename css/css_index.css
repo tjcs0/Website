@@ -123,10 +123,10 @@
 /* Mobile Start */
 
 /* Ocultar menu mobile */
-/*.hidden {
+.hidden {
         display: contents;
     }
-*/
+
 @media only screen and (max-width: 600px){
     .social, .social > a, .social > a:hover, .menu_bot {
         display: none; !important

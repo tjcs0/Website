@@ -24,10 +24,10 @@
     border-color: black;*/
 }
 .menu_bot {
-    width: 55%;
+    width: 80%;
     position: fixed;
+    left: 5%;
     bottom: 4%;
-    text-align: center;
     height: 5%;
 }
 
@@ -128,7 +128,7 @@
         visibility: hidden;
     }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
     .social, .social > a, .social > a:hover, .menu_bot {
         display: none; !important
         visibility: hidden;
